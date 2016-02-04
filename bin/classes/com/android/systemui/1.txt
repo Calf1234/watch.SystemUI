@@ -1,0 +1,2 @@
+./statusbar/phone/PhoneStatusBar.java:    protected PhoneStatusBarView makeStatusBarView() {
+./statusbar/phone/PhoneStatusBar.java:        makeStatusBarView();
