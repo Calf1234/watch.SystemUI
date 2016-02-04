@@ -46,6 +46,7 @@ public class SystemBars extends SystemUI implements ServiceMonitor.Callbacks {
 
     @Override
     public void start() {
+        Log.v(TAG, "SystemBars.java#start——————>HHH20160204 start");
         if (DEBUG) Log.d(TAG, "start");
         mServiceMonitor = new ServiceMonitor(TAG, DEBUG,
                 mContext, Settings.Secure.BAR_SERVICE_COMPONENT, this);
@@ -85,6 +86,7 @@ public class SystemBars extends SystemUI implements ServiceMonitor.Callbacks {
     }
 
     private void createStatusBarFromConfig() {
+		Log.v(TAG, "SystemBars.java#createStatusBarFromConfig——————>HHH20160204 BaseStatusBar instantiation");
         if (DEBUG) Log.d(TAG, "createStatusBarFromConfig");
         final String clsName = mContext.getString(R.string.config_statusBarComponent);
         if (clsName == null || clsName.length() == 0) {

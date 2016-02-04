@@ -21,7 +21,9 @@
         package="com.android.systemui"
         android:sharedUserId="android.uid.systemui"
         coreApp="true">
-
+       <uses-sdk
+		           android:minSdkVersion="16"
+				           android:targetSdkVersion="21" />
     <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />

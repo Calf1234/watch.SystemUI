@@ -2729,7 +2729,11 @@ public class PhoneStatusBar extends BaseStatusBar implements DemoMode,
         checkBarModes();
     }
 
+	/**Mr.Huang
+	 * StatusBarExpanded poll up
+	 */
     private void resumeSuspendedAutohide() {
+		Log.v(TAG, "PhoneStatusBar.java#resumeSuspendedAutohide——————————>HHH.20160204");
         if (mAutohideSuspended) {
             scheduleAutohide();
             mHandler.postDelayed(mCheckBarModes, 500); // longer than home -> launcher
